@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-opacity: hsla(179, 62%, 43%, 0.8);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --light-gray-op: hsla(204, 43%, 93%, 0.8);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: 32px 16px;
+}
+
+.component {
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.join {
+  padding: 24px;
+  min-height: 256px;
+}
+
+.join h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+
+.join h2 {
+  font-size: 1.125rem;
+  color: var(--bright-yellow);
+  margin-bottom: 12px;
+}
+
+.join__text {
+  color: var(--grayish-blue);
+}
+
+.price {
+  color: var(--white);
+  background-color: var(--cyan);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 256px;
+}
+
+.price h3 {
+  font-weight: normal;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  color: var(--light-gray-op);
+}
+
+.month span {
+  font-size: 36px;
+  margin-right: 12px;
+  color: var(--white);
+}
+
+.access {
+  color: var(--light-gray-op);
+}
+
+.why {
+  color: var(--white);
+  background-color: var(--cyan-opacity);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 256px;
+  border-radius: 0 0 8px 8px;
+}
+
+.why h3 {
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.why ul {
+  list-style: none;
+  color: var(--light-gray-op);
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--bright-yellow);
+  color: var(--white);
+  padding: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--bright-yellow);
+}
+
+@media (min-width: 376px) {
+  .join h1 {
+    font-size: 1.75rem;
+  }
+
+  .join h2 {
+    font-size: 1.25rem;
+  }
+
+  .two-columns {
+    display: flex;
+  }
+
+  .price,
+  .why {
+    width: 50%;
+  }
+
+  .price {
+    border-radius: 0 0 0 8px;
+  }
+
+  .why {
+    border-radius: 0 0 8px 0;
+  }
+}
