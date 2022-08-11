@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  background-color: var(--very-dark-blue-main);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 360px;
+  background-color: var(--very-dark-blue-card);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card__img {
+  position: relative;
+  background-color: var(--cyan);
+  border-radius: 8px;
+}
+
+.hover {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card__img > img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card__img:hover .hover {
+  opacity: 1;
+}
+
+.card__img > img {
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.description {
+  color: var(--soft-blue);
+  margin-bottom: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.price__eth {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+}
+
+.price__date {
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+}
+
+.price__eth > img {
+  width: 12px;
+  margin-right: 8px;
+}
+
+.price__date > img {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--very-dark-blue-line);
+  margin-bottom: 24px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info > img {
+  width: 32px;
+  margin-right: 12px;
+}
+
+.creator span {
+  color: var(--soft-blue);
+}
