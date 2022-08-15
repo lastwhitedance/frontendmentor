@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  /* vertical-align: top; */
+  /* display: block; */
+  max-width: 100%;
+}
+
+input {
+  all: unset;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.logo {
+  margin: 2rem 0;
+}
+
+h1 {
+  color: var(--gray);
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.subscribe {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 4.32rem;
+  gap: 16px;
+}
+
+.input {
+  flex-grow: 0.74;
+  border: 1px solid var(--pale-blue);
+  border-radius: 32px;
+  color: var(--pale-blue);
+  padding: 0.8rem;
+  text-align: left;
+  padding-left: 1.6rem;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+.btn {
+  flex-grow: 0.26;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 32px;
+  font-weight: 600;
+}
+
+.dashboard {
+  margin-bottom: 3.54rem;
+  max-width: 640px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 18px;
+  margin-bottom: 1.3rem;
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--blue);
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.social a:hover {
+  border: 2px solid var(--voft-magenta);
+  color: var(--voft-magenta);
+}
+
+.copyright {
+  font-size: 12px;
+}
